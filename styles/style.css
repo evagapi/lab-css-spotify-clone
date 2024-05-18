@@ -1,8 +1,69 @@
-/*
-Colors:
+:root {
+  --font-size-l: 3rem;
+  --font-size-m: 1.3rem;
+  --font-size-s: 1.2rem;
+  --font-size-xs: 1rem;
+  --text-color: #1a1a1a;
+  --main-brand-color: #00b172;
+}
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+html {
+  font-family: sans-serif;
+  color: var(--text-color);
+  box-sizing: border-box;
+  margin: auto;
+}
 
-*/
+.logo-and-navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem 0.1rem;
+  padding: 1rem;
+  position: sticky;
+}
+
+.navigation-logo {
+  height: 25px;
+}
+
+.navigation-bar {
+  display: flex;
+  font-size: var(--font-size-xs);
+}
+
+.__navigation-options {
+  list-style: none;
+  display: flex;
+}
+
+.__navigation-item {
+  text-decoration: none;
+  color: var(--text-color);
+  margin: 10px;
+}
+
+.__navigation-item:hover {
+  color: var(--main-brand-color);
+}
+
+@media (min-width: 640px) {
+  .header {
+    max-width: 700px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    max-width: 1000px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1536px) {
+  .header {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
