@@ -130,6 +130,55 @@ html {
   padding: 1rem;
 }
 
+.functionalities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--main-brand-color);
+  background-image: url(/images/spotify-icon-white.png);
+  background-repeat: no-repeat;
+  background-size: 12%;
+  background-position: center;
+  padding: 2rem;
+}
+
+.__functionalities-wrapper {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.__functionalities-heading {
+  font-size: var(--font-size-m);
+  display: inline;
+  margin: 0 auto 1.5rem 0;
+  font-weight: bold;
+  border-bottom: 1.5px solid #fff;
+  padding-bottom: 0.2rem;
+}
+
+.__functionality-heading {
+  font-size: var(--font-size-m);
+  font-weight: bolder;
+  margin-bottom: 0.9rem;
+}
+
+.__functionality-boxes-wrapper {
+  width: 50%;
+}
+
+.__functionality-text {
+  font-size: var(--font-size-xs);
+  font-weight: lighter;
+  margin-bottom: 1.2rem;
+  line-height: 0.8rem;
+}
+
+.spotify-app-image {
+  height: 15rem;
+}
+
 @media (max-width: 639px) {
   .navigation-bar {
     font-size: 0.5rem;
@@ -142,6 +191,16 @@ html {
     flex-direction: column;
     justify-content: center;
   }
+
+  .__functionality-boxes-wrapper {
+    width: 150%;
+  }
+  .spotify-app-image {
+    visibility: hidden;
+  }
+  .functionalities {
+    background-image: unset;
+  }
 }
 
 @media (min-width: 640px) {
@@ -152,7 +211,8 @@ html {
 
 @media (min-width: 1024px) {
   .main-text-wrapper,
-  .whats-on-spotify {
+  .whats-on-spotify,
+  .functionalities {
     max-width: 1000px;
     margin: auto;
   }
@@ -161,6 +221,10 @@ html {
   }
   .introduction-text {
     max-width: 40%;
+  }
+  .spotify-app-image {
+    height: 25rem;
+    padding: 2rem;
   }
 }
 
