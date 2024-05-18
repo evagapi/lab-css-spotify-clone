@@ -47,10 +47,52 @@ html {
   color: var(--main-brand-color);
 }
 
+.main-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/landing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0, 0;
+  color: #fff;
+}
+
+.main-heading {
+  margin: 0 auto 10px;
+  text-align: center;
+  font-size: var(--font-size-l);
+  font-weight: 600;
+}
+
+.introduction-text {
+  width: 40%;
+  text-align: center;
+  line-height: 1.4em;
+  font-size: var(--font-size-xs);
+}
+
+@media (max-width: 640px) {
+  .header {
+    min-width: 420px;
+    margin: auto;
+  }
+  .main-text-wrapper {
+    height: 200px;
+  }
+  .introduction-text {
+    width: 70%;
+  }
+}
+
 @media (min-width: 640px) {
   .header {
     max-width: 700px;
     margin: auto;
+  }
+  .main-text-wrapper {
+    height: 200px;
   }
 }
 
@@ -59,11 +101,17 @@ html {
     max-width: 1000px;
     margin: auto;
   }
+  .main-text-wrapper {
+    height: 600px;
+  }
 }
 
 @media (min-width: 1536px) {
   .header {
     max-width: 1200px;
     margin: auto;
+  }
+  .main-text-wrapper {
+    height: 750px;
   }
 }
