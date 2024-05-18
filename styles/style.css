@@ -15,12 +15,15 @@ html {
 }
 
 .logo-and-navigation-container {
+  background-color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 0.8rem 0.1rem;
   padding: 1rem;
   position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .navigation-logo {
@@ -130,7 +133,7 @@ html {
 }
 
 @media (max-width: 640px) {
-  .header,
+  .main-text-wrapper,
   .whats-on-spotify {
     min-width: 420px;
     margin: auto;
@@ -149,7 +152,7 @@ html {
 }
 
 @media (min-width: 640px) {
-  .header {
+  .main-text-wrapper {
     max-width: 700px;
     margin: auto;
   }
@@ -159,7 +162,7 @@ html {
 }
 
 @media (min-width: 1024px) {
-  .header,
+  .main-text-wrapper,
   .whats-on-spotify {
     max-width: 1000px;
     margin: auto;
@@ -170,7 +173,7 @@ html {
 }
 
 @media (min-width: 1536px) {
-  .header {
+  .main-text-wrapper {
     max-width: 1200px;
     margin: auto;
   }
